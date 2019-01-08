@@ -1,11 +1,19 @@
 # Add  code here!
 def prime?(n)
-  while n > 1
-    if n % 2 == 0
-      return false
-    elsif n % 3 == 0
-      return false
-
+if n <= 1
+  return false
+elsif n == 2
+    return true
+  elsif n == 3
+    return true
+  end
+array_numbers = []
+f = n
+  while f > 2
+    f -= 1
+    if  n % f == 0
+        return false
     end
-    return false
+  end
+  return true
 end
